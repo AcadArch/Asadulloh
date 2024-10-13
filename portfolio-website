@@ -1,0 +1,104 @@
+portfolio-website/
+│
+├── index.html         # Saytning asosiy sahifasi
+├── about.html         # About bo‘limi uchun sahifa (ixtiyoriy)
+├── styles/            # CSS fayllarini saqlash uchun papka
+│   └── main.css       # Sayt uchun asosiy CSS fayli
+├── scripts/           # JS fayllarini saqlash uchun papka
+│   └── app.js         # JavaScript logikasi (ixtiyoriy)
+├── images/            # Rasmlarni saqlash uchun papka
+│   └── (rasmlar)      # Yuklagan rasmlaringiz
+└── README.md          # Loyihangiz haqidagi qisqacha ma'lumot
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asadulloh Portfolio</title>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <header>
+    <h1>Asadulloh Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h2>Welcome to My Portfolio</h2>
+    <p>This is where my projects, animations, and presentations come together.</p>
+  </section>
+
+  <section id="work">
+    <h2>My Work</h2>
+    <p>Render photos and working drawings will be here.</p>
+    <div class="gallery">
+      <img src="images/example1.jpg" alt="Render Example">
+      <img src="images/example2.jpg" alt="Working Drawing">
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>You can reach me at:</p>
+    <ul>
+      <li>Phone: +998902900579</li>
+      <li>Email: <a href="mailto:asadbekodiljonov7@gmail.com">asadbekodiljonov7@gmail.com</a></li>
+      <li><a href="https://instagram.com/asadulloh_architect" target="_blank">Instagram</a></li>
+      <li><a href="https://t.me/asadulloh_arxitektor" target="_blank">Telegram</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Asadulloh. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.gallery img {
+  width: 300px;
+  margin: 10px;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
